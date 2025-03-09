@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: Georgia;
-    background-color: rgb(161, 159, 159);
+    background-color: white;
   }
   
   ul {
@@ -75,6 +75,36 @@
     color: #333;
     font-weight: bold;
   }
+
+  
+  .carousel-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem; 
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center; /* Adicionado para centralizar as imagens */
+    
+}
+
+  .carousel img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Adiciona transição suave */
+  }
+
+  .carousel img:hover {
+    transform: scale(1.1);
+  } 
+
+  p + .carousel {
+    margin-top: 3rem; /* Adiciona espaçamento superior ao carrossel */
+}
+
+  
+
   
   
   
@@ -95,4 +125,10 @@
     .container {
       flex-wrap: wrap;
     }
+
+    .carousel img {
+      max-width: 100%; /* Garante que as imagens ocupem a largura total em telas pequenas */
+  }
+
+   
   }
