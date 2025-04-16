@@ -40,6 +40,18 @@
   }
   
   /* conteúdo principal */
+ 
+   body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    align-content: center;
+    align-items: center;
+   } 
   .container {
     display: flex;
     padding: 2rem 2.5rem;
